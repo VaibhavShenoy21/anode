@@ -12,10 +12,10 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
 const db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "cards",
+    host: "sql6.freemysqlhosting.net",
+    user: "sql6475678",
+    password: "mxd7B66DuP",
+    database: "sql6475678",
 })
 
 app.use(cors({
@@ -249,6 +249,6 @@ app.put("/api/update4/:id", (req,res) => {
 })
 
 
-app.listen(process.env.PORT || PORT, ()=>{
-    console.log(`Server is Running on port ${PORT}`);
+app.listen(5000, ()=>{
+    console.log(`Server is Running on port 5000`);
 })
