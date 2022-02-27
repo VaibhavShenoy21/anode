@@ -249,16 +249,6 @@ app.put("/api/update4/:id", (req,res) => {
 })
 
 
-
-app.get("/",(req,res) =>{
-    // const sqlInsert = "INSERT INTO contact_db (name,email,contact) VALUES ('vaibhavshenoy','vaibhavshenoy1@gmail.com','4253423445')";
-    // db.query(sqlInsert,(error,result) =>{
-    //     console.log("error",error);
-    //     console.log("result",result);
-    // })
-    // res.send("Hello Express");
-})
-
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server is Running on port ${PORT}`);
 })
